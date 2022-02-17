@@ -9,6 +9,8 @@
                 onClick: function() {
                     var n = this.getNode('h')
                     console.log(n)
+                    console.log(this.getNode('xyzy'))
+                    console.log(this.getNodes())
                     n.state.xxx++
                     n.render()
                 }

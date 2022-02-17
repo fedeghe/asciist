@@ -1,23 +1,28 @@
 (function() {
+
     var config = {
-            children: [{
-                tag: 'h2',
-                html: 'Just a component'
-            }, {
+        children: [
+            {component: 'Header', ref: 'h', data: {xxx: 1}},
+            {
                 component: 'tt',
                 params: {}
-            }],
-            cb: function() {
-                hokuto.channel.get('xxx').sub('hello', console.log)
-                this.lateWid('xyzy')
-                this.done();
-            },
-            engy: {componentsUrl: 'js/components/'}
-        };
+            }
+        ],
+        onClick: function() {
+            var n = this.getNode('h')
+            n.data.xxx++
+            n.render()
+        },
+        cb: function() {
+            hokuto.channel.get('xxx').sub('hello', console.log)
 
-    window.onload = function() {
-        config.target = document.body
-
-        hokuto.renderWithComponents(config, true, 'xxx').then(console.log)
+            this.lateWid('xyzy')
+            this.done();
+        },
+        engy: {componentsUrl: 'js/components/'}
     };
+
+    
+    config.target = document.body
+    hokuto.renderWithComponents(config, true, 'xxx').then(console.log)
 })();

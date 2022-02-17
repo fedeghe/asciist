@@ -1,0 +1,10 @@
+{
+    "EXE": [
+        "rm -rf js css index.html",
+        "mkdir -p js/components css"
+    ],
+    "source/index.html": ". -plugins=malta-browser-refresh...malta-dev-srv",
+    "source/less/*.less": "css -plugins=malta-less",
+    "source/js/*.js": "js",
+    "source/js/components/*.js": "js/components"
+}

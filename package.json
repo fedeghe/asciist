@@ -1,0 +1,17 @@
+{
+    "name": "asciist",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "fedeghe <fedeghe@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "start": "malta source/build.json"
+    },
+    "dependencies": {
+        "hokuto": "^0.0.8",
+        "malta": "^4.1.35",
+        "malta-browser-refresh": "^1.2.16",
+        "malta-dev-srv": "^1.1.7",
+        "malta-less": "^1.0.12"
+    }
+}

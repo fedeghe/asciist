@@ -2,17 +2,23 @@
 
     var config = {
         children: [
-            {component: 'Header', ref: 'h', data: {xxx: 1}},
+            {
+                component: 'Header',
+                ref: 'h',
+                state: {xxx: 1},
+                onClick: function() {
+                    var n = this.getNode('h')
+                    console.log(n)
+                    n.state.xxx++
+                    n.render()
+                }
+            },
             {
                 component: 'tt',
                 params: {}
             }
         ],
-        onClick: function() {
-            var n = this.getNode('h')
-            n.data.xxx++
-            n.render()
-        },
+        
         cb: function() {
             hokuto.channel.get('xxx').sub('hello', console.log)
 

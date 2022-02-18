@@ -7,6 +7,7 @@
                 ref: 'h',
                 state: {xxx: 1},
                 onClick: function() {
+                    this.dox()
                     var n = this.getNode('h')
                     console.log(n)
                     console.log(this.getNode('xyzy'))

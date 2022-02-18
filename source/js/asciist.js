@@ -6,12 +6,14 @@
                 component: 'Header',
                 ref: 'h',
                 state: {xxx: 1},
+                data: {d: 1},
                 onClick: function() {
-                    this.dox()
+                    // this.dox()
                     var n = this.getNode('h')
                     console.log(n)
                     console.log(this.getNode('xyzy'))
                     console.log(this.getNodes())
+                    this.data.d++;
                     n.state.xxx++
                     n.render()
                 }

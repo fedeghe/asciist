@@ -8,7 +8,7 @@
         "start": "malta source/build.json"
     },
     "dependencies": {
-        "hokuto": "https://github.com/fedeghe/hokuto.git#dev",
+        "hokuto": "../hokuto",
         "malta": "^4.1.35",
         "malta-browser-refresh": "^1.2.16",
         "malta-dev-srv": "^1.1.7",

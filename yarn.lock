@@ -31,9 +31,8 @@ graceful-fs@^4.1.2:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.9.tgz#041b05df45755e587a24942279b9d113146e1c96"
   integrity sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==
 
-"hokuto@https://github.com/fedeghe/hokuto.git#dev":
+hokuto@../hokuto:
   version "0.0.9"
-  resolved "https://github.com/fedeghe/hokuto.git#83f8e58d7104726efee100ae4e5ac147b2348638"
   dependencies:
     "@fedeghe/channeljs" "^1.2.7"
     balle "^1.0.45"
